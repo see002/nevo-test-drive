@@ -9,12 +9,12 @@ export default function CarModelGrid({ cars }: { cars: CarModel[] }) {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {cars.map((car) => (
           <Link 
-            href={`/cars/book/${encodeURIComponent(car.imageSrc)}`} 
+            href={`/cars/book/${encodeURIComponent(car.image_url)}`} 
             key={car.model}
           >
             <div className="relative group overflow-hidden rounded-lg border-gray-200 border bg-gray-50 hover:cursor-pointer">
               <Image
-                src={`/assets/images/${car.imageSrc}.webp`}
+                src={`/assets/images/${car.image_url}.webp`}
                 alt={car.model}
                 width={300}
                 height={200}

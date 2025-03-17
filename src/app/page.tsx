@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 export interface CarModel {
   id?: string;
   model: string;
-  imageSrc: string;
+  image_url: string;
 }
 
 export const revalidate = 3600; // Revalidate every hour
@@ -12,7 +12,7 @@ export const dynamic = 'force-static'; // Ensures SSG, prevents server execution
 
 async function getCarModels() {
 
-  const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/cars`, {
+  const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/vehicles/cars`, {
     next: { revalidate: 3600 }
   });
 
