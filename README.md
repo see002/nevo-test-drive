@@ -2,6 +2,10 @@
 
 A modern web application for booking test drives of vehicles, built with Next.js 14, TypeScript and SQLite.
 
+## Demo
+[Demo.mov.zip](https://github.com/user-attachments/files/19729253/Demo.mov.zip)
+
+
 ## Features
 
 - Dynamic vehicle availability checking
